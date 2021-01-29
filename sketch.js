@@ -31,9 +31,7 @@ function setup() {
 function draw() {
 rectMode(CENTER);
 background(0);
-if (keyDown("space")){
-paperball.isStatic = true;
-}
+keypressed();
 paperball.display();
 drawSprites();
 }
