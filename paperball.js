@@ -9,6 +9,12 @@ class Paperball{
         this.body = Bodies.circle(x,y,radius,options);
         this.radius = radius;
         World.add(world,this.body)
+        function keyPressed() {
+            if (keyCode === 32) {
+                Matter.Body.setStatic(ball.body,true);
+  }
+}
+
     }
     display(){
         var pos = this.body.position;
